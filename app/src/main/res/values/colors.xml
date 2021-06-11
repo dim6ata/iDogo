@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1C5D96</color>
+    <color name="colorPrimaryDark">#0A253A</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="breed_clr">#BCD81B</color>
+    <color name="dog_clr">#78D115</color>
+    <color name="search_clr">#D3627A</color>
+    <color name="background_clr">#3498E2</color>
+    <color name="shadow_clr">#0A253A</color>
+    <color name="text_clr">#000000</color>
+    <color name="spinner_dropdown_clr">#D0919B</color>
+    <color name="text_correct_clr">#4CAF50</color>
+    <color name="text_incorrect_clr">#CE352A</color>
+    <color name="color_disabled">#C5BEBE</color>
+    <color name="color_disabled2">#756F6F</color>
+    <color name="color_bright_blue">#49DBFA</color>
+
+
+</resources>

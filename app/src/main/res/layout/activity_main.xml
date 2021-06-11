@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_clr"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/another_great_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/identify_breed_btn"
+            android:layout_width="234dp"
+            android:layout_height="142dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_button1"
+            android:fontFamily="@font/fredericka_the_great"
+            android:onClick="onClickIDBreed"
+            android:shadowColor="@color/shadow_clr"
+            android:text="@string/identify_the_breed"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/identify_dog_btn"
+            android:layout_width="234dp"
+            android:layout_height="142dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_button2"
+            android:fontFamily="@font/fredericka_the_great"
+            android:onClick="onClickIDDog"
+            android:padding="15dp"
+            android:shadowColor="@color/shadow_clr"
+            android:text="@string/identify_the_dog"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/search_dog_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/identify_breed_btn"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/search_dog_btn"
+            android:layout_width="234dp"
+            android:layout_height="142dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_button3"
+            android:fontFamily="@font/fredericka_the_great"
+            android:onClick="onClickSearchDog"
+            android:padding="15sp"
+            android:shadowColor="@color/shadow_clr"
+            android:text="@string/search_the_dog"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Switch
+            android:id="@+id/timer_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:button="@color/breed_clr"
+            android:checked="false"
+            android:fontFamily="@font/fredericka_the_great"
+            android:text="@string/timer"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">iDogo</string>
+    <string name="identify_the_breed">Identify the Breed</string>
+    <string name="identify_the_dog">Identify the Dog</string>
+    <string name="search_the_dog">Search Dog Breed</string>
+    <string name="timer">Timer</string>
+    <string name="todo">TODO</string>
+    <string name="select_spinner" />
+    <string name="select_breed">Select Breed:</string>
+    <string name="submit_button">Submit</string>
+    <string name="next_button">Next</string>
+    <string name="correct">CORRECT!</string>
+    <string name="incorrect">WRONG!</string>
+    <string name="correct_breed">This is: </string>
+    <string name="select_the">Which Picture Has A</string>
+    <string name="next">Next</string>
+    <string name="type_a_breed">Type a Breed</string>
+    <string name="stop">Stop</string>
+    <string name="slideshow_imageview">SlideShow ImageView</string>
+    <string name="idogo_logo">iDogo Logo</string>
+    <string name="identify_breed_image_view">Identify Breed Image View</string>
+    <string name="identify_dog_image_viewer_1">Identify Dog: image viewer 1</string>
+    <string name="identify_dog_image_viewer_2">Identify Dog: image viewer 2</string>
+    <string name="identify_dog_image_viewer_3">Identify Dog: image viewer 3</string>
+    <string name="image1_dog_id">Dog Image Holder 1</string>
+    <string name="iamge2_dog_id">Dog Image Holder 2</string>
+    <string name="image3_dog_holder">Dog Image Holder 3</string>
+</resources>

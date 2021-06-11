@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_clr"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/identify_breed_btn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="200dp"
+            android:layout_height="142dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_button1"
+            android:fontFamily="@font/fredericka_the_great"
+            android:gravity="center"
+            android:onClick="onClickIDBreed"
+            android:shadowColor="@color/shadow_clr"
+            android:text="@string/identify_the_breed"
+            android:textColor="?attr/editTextColor"
+            android:textColorLink="@color/text_clr"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/identify_dog_btn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="200dp"
+            android:layout_height="142dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_button2"
+            android:fontFamily="@font/fredericka_the_great"
+            android:gravity="center"
+            android:onClick="onClickIDDog"
+            android:padding="5dp"
+            android:shadowColor="@color/shadow_clr"
+            android:text="@string/identify_the_dog"
+            android:textColor="?attr/editTextColor"
+            android:textColorLink="@color/text_clr"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/search_dog_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/identify_breed_btn"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/search_dog_btn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="200dp"
+            android:layout_height="142dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_button3"
+            android:fontFamily="@font/fredericka_the_great"
+            android:gravity="center"
+            android:onClick="onClickSearchDog"
+            android:padding="10dp"
+            android:shadowColor="@color/shadow_clr"
+            android:text="@string/search_the_dog"
+            android:textColor="?attr/editTextColor"
+            android:textColorLink="@color/text_clr"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end">
+
+
+        <Switch
+            android:id="@+id/timer_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:button="@color/breed_clr"
+            android:checked="false"
+            android:fontFamily="@font/fredericka_the_great"
+            android:text="@string/timer"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </LinearLayout>
+</LinearLayout>

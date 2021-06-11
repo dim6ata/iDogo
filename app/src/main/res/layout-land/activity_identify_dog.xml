@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_clr"
+    tools:context=".IdentifyDog">
+
+
+    <TextView
+        android:id="@+id/label_dog_q"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/fredericka_the_great"
+        android:gravity="center"
+        android:text="@string/select_the"
+        android:textColor="@color/text_clr"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/countdown2_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/fredericka_the_great"
+        android:textSize="44sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:baselineAligned="false"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/dog_button_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_dog_q">
+
+        <LinearLayout
+            android:id="@+id/lin1_id"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/image_style"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/image1_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+
+                android:contentDescription="@string/identify_dog_image_viewer_1"
+                android:onClick="clickIMG1"
+                android:padding="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/dogo_beagle_7"
+                app:layout_constraintTop_toBottomOf="@+id/label_dog_q"
+                tools:layout_editor_absoluteX="111dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lin2_id"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/image_style"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/image2_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/identify_dog_image_viewer_2"
+                android:onClick="clickIMG2"
+                android:padding="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/dogo_airedale_169"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="213dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin3_id"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/image_style"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/image3_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/identify_dog_image_viewer_3"
+                android:onClick="clickIMG3"
+                android:padding="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/dogo_afghan_hound_0"
+                tools:layout_editor_absoluteX="111dp"
+                tools:layout_editor_absoluteY="384dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/dog_correct_id"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:background="@drawable/round_button_sml2"
+        android:fontFamily="@font/fredericka_the_great"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@string/correct"
+        android:textSize="45sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="@+id/dummyCentreDogo3"
+        app:layout_constraintStart_toStartOf="@+id/dummyCentreDogo2"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout"></TextView>
+
+
+    <Button
+        android:id="@+id/dog_button_id"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/round_button_sml1"
+        android:fontFamily="@font/fredericka_the_great"
+        android:onClick="onNext"
+        android:text="@string/next"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/dummyCentreDogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/dog_button_id"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_dog_q" />
+
+    <TextView
+        android:id="@+id/dummyCentreDogo4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/dog_button_id"
+        app:layout_constraintEnd_toStartOf="@+id/dummyCentreDogo2"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/label_dog_q" />
+
+    <TextView
+        android:id="@+id/dummyCentreDogo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/dog_button_id"
+        app:layout_constraintEnd_toStartOf="@+id/dummyCentreDogo"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/label_dog_q" />
+
+    <TextView
+        android:id="@+id/dummyCentreDogo6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/dog_button_id"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toEndOf="@+id/dummyCentreDogo3"
+        app:layout_constraintTop_toBottomOf="@+id/label_dog_q" />
+
+    <TextView
+        android:id="@+id/dummyCentreDogo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/dog_button_id"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toEndOf="@+id/dummyCentreDogo"
+        app:layout_constraintTop_toBottomOf="@+id/label_dog_q" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
