@@ -3,12 +3,12 @@
 ###
 
 #### iDogo is my first Android Application, which has been written as a part of a university project with the purpose of practicing Android basics. 
-```
+
 The application eagerly loads all images which are then randomly selected for the different activities and questions. 
 - 'Identify the Breed' allows users to select a dog breed name which is associated with the displayed image. 
 - 'Identify the Dog' allows users to select an image of a dog which corresponds to the requested breed. 
 - 'Search Dog Breed' allows users to search for a breed and start a slideshow of all images that are related to it. 
-```
+
 
 Check the following screenshots of the application: 
 
