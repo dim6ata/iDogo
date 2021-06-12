@@ -1,5 +1,5 @@
 # iDogo
-### iDogo is an Android application that allows users to learn and test their knowledge about dogs by presenting multiple options to explore various dog breeds. 
+### Portfolio Part #5: iDogo is an Android application that allows users to learn and test their knowledge about dogs by presenting multiple options to explore various dog breeds. 
 ###
 
 #### iDogo is my first Android Application, which has been written as a part of a university project with the purpose of practicing Android basics. 
@@ -10,7 +10,7 @@ The application eagerly loads all images which are then randomly selected for th
 - 'Search Dog Breed' allows users to search for a breed and start a slideshow of all images that are related to it. 
 
 
-Check the following screenshots of the application: 
+### Application Screenshots: 
 
 <table>
 
@@ -85,4 +85,4 @@ Check the following screenshots of the application:
 
 Images sourced from: http://vision.stanford.edu/aditya86/ImageNetDogs/ 
 
-Copyright 2020 dim6ata
+Copyright 2020, dim6ata.
